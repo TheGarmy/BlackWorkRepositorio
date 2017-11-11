@@ -155,44 +155,7 @@ img.miPerFoto {
 		-moz-column-count: 1; /* Firefox */
 		column-count: 1;
 	}
-
 }
-.contenedor-portafolio{
-	border: solid #0C0C0C;
-	/*margin-bottom: 20px;*/
-}
-.row-portafolio{
-	margin-bottom: 20px;
-}
-.row-portafolio button{
-	border-color: #0C0C0C;
-	border-radius: 0px;
-}
-/*////////////*/
-.topfooter-cont{
-	background: #222;
-	padding: 20px 0;
-}
-.linkfooter-cont{
-	padding: inherit;
-}
-.img-footerCont img{
-	width: 300px;
-}
-.bottomfooter-cont{
-	background: #0C0C0C;
-}
-.mispan img{
-	width: 120px;
-}
-.cont-portada{
-	margin: 1px;
-	padding: 20% 0;
-	min-height: 720px;
-	background-image: url(../img/fondo2.jpg);
-}
-
-/*////////*/
 .portafolio-imagen img{
 	transition: .3s;
 }
@@ -215,5 +178,29 @@ img.miPerFoto {
 }
 .portafolio-imagen:hover :not(img){
 	opacity: 1;
-
 }
+.contenedor-portafolio{
+	border: solid #0C0C0C;
+	/*margin-bottom: 20px;*/
+}
+.row-portafolio{
+	margin-bottom: 20px;
+}
+.row-portafolio button{
+	border-color: #0C0C0C;
+	border-radius: 0px;
+}
+.topfooter-cont{
+	background: #222;
+	padding: 20px 0;
+}
+.linkfooter-cont{
+	padding: inherit;
+}
+.img-footerCont img{
+	width: 300px;
+}
+.bottomfooter-cont{
+	background: #0C0C0C;
+}
+
