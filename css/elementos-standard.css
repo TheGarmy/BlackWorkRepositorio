@@ -1,0 +1,51 @@
+/*general*/
+@font-face{
+	font-family: 'Raleway', sans-serif;
+	font-family: 'Slabo 27px', serif;
+}
+body{
+	font-family: "Raleway";
+	font-size: 16px;
+	font-weight: 300;
+	color:#fff;
+	line-height: 30px;
+	text-align: center;
+	background-color: #989898;
+}
+strong{
+	font-weight: 500;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+
+}
+a:hover, a:focus{
+	text-decoration: none;
+	color: #C7C7C7;
+	font-size: 17px;
+}
+h1, h2, h3{
+	font-family: "Slabo 27px";
+	margin-top: 10px;
+}
+.mibtn{
+	width: 100%;
+	border-color: #fff;
+	background: #0C0C0C;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	border-style: solid;
+}
+.mibtn:hover{
+	background: #222;
+}
+hr{
+	width: 100%;
+	border: 2px solid #fff;
+	border-radius: 300px ;
+	height: 0px;
+	text-align: center;
+}
