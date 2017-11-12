@@ -10,4 +10,14 @@ $(document).ready(function(){
     	$(".miform-cont").addClass("miform-cont-new");
     	$(".miform-cont").removeClass("miform-cont");
 	});
+	///Oculta divs
+	$("a.active").click(function(){
+			$("div.div-absolute").slideDown(300);
+	        $("div.div-absolute").fadeIn();
+	        // $("#div2").fadeIn("slow");
+	        // $("#div3").fadeIn(3000);
+	    });
+	$("a.active").mouseleave(function(){
+        $("div.div-absolute").fadeOut();
+    });
 });
