@@ -98,6 +98,9 @@ img.miPerFoto {
   right: 0;
   min-height: 70px;
 }
+.micont-top .btn-group{
+	position: relative;
+}
 .btn-group a:hover{
 	color: #fff;
 }
@@ -106,6 +109,24 @@ img.miPerFoto {
 	background: #fff;
 	border-color: #222;
 }
+/*///////////////////*/
+.container div.div-absolute{
+	display: none;
+	padding: 10px 20px;
+	text-align: left;
+	position: absolute;
+	top: 556px;
+	left: 50px;
+	z-index: 1;
+	color: black;
+	background: #E7E9DE;
+	/*bottom: 80px;*/
+}
+.container div.div-absolute span{
+	display: inline-block;
+}
+
+/*///////////////////*/
 .contenedor-medias{
 	margin-bottom: 20px;
 }
@@ -179,6 +200,30 @@ img.miPerFoto {
 .portafolio-imagen:hover :not(img){
 	opacity: 1;
 }
+.portafolio-imagen:hover .modal-body img{
+	filter: blur(0px) brightness(100%);
+}
+.modal-open .modal-content button.close{
+	text-shadow: none;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #0C0C0C;
+    opacity: 5;
+    color: #6F6F6F;
+    z-index: 999;
+    right: -12px;
+    top: -12px;
+    border-radius: 50%;
+    font-size: 15px;
+    border: 2px solid #fff;
+    line-height: 25px;
+    -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+	box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+}
+.modal-open .modal-content button.close:focus{
+	outline: none;
+}
 .contenedor-portafolio{
 	border: solid #0C0C0C;
 	/*margin-bottom: 20px;*/
@@ -204,3 +249,4 @@ img.miPerFoto {
 	background: #0C0C0C;
 }
 
+/*///////////////*/

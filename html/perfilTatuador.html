@@ -77,10 +77,16 @@
 					</div>
 				</div>
 				<div class="btn-group btn-group-justified">
-					<a href="" class="btn mibtn active"><h2>Información</h2></a>
+					<a class="btn mibtn active"><h2>Información</h2></a>
 					<a href="" class="btn mibtn"><h2>Calendario</h2></a>
 					<a href="" class="btn mibtn"><h2>Calificar</h2></a>
 				</div>
+			</div><!-- fin de micont-top -->
+			<div class="col-md-5 div-absolute">
+				<h3>Sobre mí</h3>
+				<p>Tatuador de Good Lucky Tatto. Manejo varios estilos. de Veracruz</p>
+				<span><h3>Horario de trabajo: </h3></span>
+				<span><p>LMMV De 12:00 a 18:00</p></span>
 			</div>
 		</div><!-- fin de row top -->
 		<div class="row">
@@ -165,26 +171,62 @@
 						<div class="contenedor-imagenesPortafolio">
 
 							<div class="portafolio-imagen">
-								<img src="../img/01.jpg">
-								<div class="hashtag-imagen">
-									<i class="fa fa-search-plus"></i>
-									<h2>mucho</h2>
+								<a href="#" data-toggle="modal" data-target="#1">
+									<img src="../img/01.jpg">
+									<div class="hashtag-imagen">
+										<i class="fa fa-search-plus"></i>
+										<h2>#cristo</h2>
+									</div>
+								</a>
+								<div class="modal fade" id="1" tabindex="-1" role="dialog">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+											<div class="modal-body">
+												<img src="../img/01.jpg">
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 
 							<div class="portafolio-imagen">
-								<img src="../img/02.jpg">
-								<div class="hashtag-imagen">
-									<i class="fa fa-search-plus"></i>
-									<h2>#yo</h2>
+								<a href="#" data-toggle="modal" data-target="#2">
+									<img src="../img/02.jpg">
+									<div class="hashtag-imagen">
+										<i class="fa fa-search-plus"></i>
+										<h2>#yo</h2>
+									</div>
+								</a>
+								<div class="modal fade" id="2" tabindex="-1" role="dialog">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+											<div class="modal-body">
+												<img src="../img/02.jpg">
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 
 							<div class="portafolio-imagen">
-								<img src="../img/03.jpg">
-								<div class="hashtag-imagen">
-									<i class="fa fa-search-plus"></i>
-									<h2>mucho</h2>
+								<a href="#" data-toggle="modal" data-target="#3">
+									<img src="../img/03.jpg">
+									<div class="hashtag-imagen">
+										<i class="fa fa-search-plus"></i>
+										<h2>mucho</h2>
+									</div>
+								</a>
+								<div class="modal fade" id="3" tabindex="-1" role="dialog">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+											<div class="modal-body">
+												<img src="../img/03.jpg">
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 
@@ -297,8 +339,9 @@
 
 	<!-- jQuery -->
     <script src="../js/jquery-3.2.1.min.js"></script>
-    <!-- <script src="../js/miscript.js"></script> -->
 	<!-- Bootstrap -->
 	<script src="../js/bootstrap.min.js"></script>
+	<!-- Nuestros scripts -->
+	<script src="../js/scriptNuestro.js"></script>
 </body>
 </html>
