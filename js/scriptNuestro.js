@@ -20,4 +20,10 @@ $(document).ready(function(){
 	$("a.active").mouseleave(function(){
         $("div.div-absolute").fadeOut();
     });
+	/////ir arriba
+	$(".ir-arriba").click(function(){
+			$('body, html').animate({
+				scrollTop: '0px'
+			}, 300);
+		});
 });
