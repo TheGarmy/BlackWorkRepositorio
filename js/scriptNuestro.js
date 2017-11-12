@@ -10,13 +10,27 @@ $(document).ready(function(){
     	$(".miform-cont").addClass("miform-cont-new");
     	$(".miform-cont").removeClass("miform-cont");
 	});
+	//////muestra opciones nav
+	$('i.fa-cog').click(function(){
+		/*Métoddo sencillo*/
+                //$("#formContainer").slideToggle(600);
+		if($('div.cont-opciones').is(':hidden'))
+		{
+			$('i.fa-cog').addClass("i-activo");
+			$('div.cont-opciones').animate({opacity: 'show', height: 'show'}, 'slow');
+		}
+		else{
+			$('i.fa-cog').removeClass("i-activo");
+			$('div.cont-opciones').animate({opacity: 'hide', height: 'hide'}, 'slow');
+		}
+	});
+
+
 	///Oculta divs
 	$("a.active").click(function(){
-			$("div.div-absolute").slideDown(300);
-	        $("div.div-absolute").fadeIn();
-	        // $("#div2").fadeIn("slow");
-	        // $("#div3").fadeIn(3000);
-	    });
+		$("div.div-absolute").fadeIn();
+		$("div.div-absolute").slideDown(300);
+	});
 	$("a.active").mouseleave(function(){
         $("div.div-absolute").fadeOut();
     });

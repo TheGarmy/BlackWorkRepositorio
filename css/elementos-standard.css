@@ -23,9 +23,15 @@ a:hover, a:focus{
 	text-decoration: none;
 	color: #C7C7C7;
 }
+/*.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+	color: #C7C7C7;
+}*/
 h1, h2, h3{
 	font-family: "Slabo 27px";
 	margin-top: 10px;
+}
+ul{
+	list-style:none;
 }
 .mibtn{
 	width: 100%;
@@ -48,7 +54,7 @@ hr{
 }
 .micont-nav{
 	padding: 5px;
-	background: #222;
+	background: #0c0c0c;
 	border: none;
 	border-radius: 0px;
 	border-bottom: 1px solid #fff;
@@ -80,6 +86,37 @@ hr{
     border-radius: 2px;
     width: 50px;
 }
+/*//////////////////*/
+nav div.cont-opciones{
+	display: none;
+	text-align: left;
+	z-index: 3;
+	position: absolute;
+	right:  0.1%;
+	background: #0c0c0c;
+}
+header div.cont-opciones ul{
+	margin: 0px;
+	padding: 0px;
+}
+header div.cont-opciones li{
+	margin: 0px;
+	padding: 0px 10px;
+}
+header div.cont-opciones ul a{
+	font-weight: normal;
+}
+header div.cont-opciones ul a:hover{
+	color: #fff;
+	font-weight: bold;
+}
+header div.cont-opciones ul li:hover{
+	background: #444;
+}
+i.i-activo{
+	color:#fff;
+}
+/*////////////////*/
 .topfooter-cont{
 	background: #222;
 	padding: 20px 0;
