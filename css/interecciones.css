@@ -40,3 +40,35 @@ div.settings textarea{
 button.mibtn{
 	color: #fff;
 }
+/*/////////citas Pendientes//////////*/
+.contenedor{
+	min-height: 700px;
+}
+div.container  div.contenedor:last-child {
+	padding-top: 0px;
+}
+.cont-citas .cont-infoCita{
+	cursor: default;
+	margin: 10px 35px;
+	padding: 0px;
+	color: #fff;
+	background: #222;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+}
+.cont-citas .mibtn-pagado{
+	cursor: default;
+	width: 100%;
+	border-color: #0c0c0c;
+	background :#27AE60;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+}
+.info-recuerda{
+	background: #BDC3C7;
+}
+strong {
+  font-weight: bold;
+}
