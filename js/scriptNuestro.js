@@ -24,14 +24,12 @@ $(document).ready(function(){
 			$('div.cont-opciones').animate({opacity: 'hide', height: 'hide'}, 'slow');
 		}
 	});
-
-
-	///Oculta divs
-	$("a.active").click(function(){
+	///Oculta div info tatuador
+	$("#btnInfo-Tatuador").click(function(){
 		$("div.div-absolute").fadeIn();
 		$("div.div-absolute").slideDown(300);
 	});
-	$("a.active").mouseleave(function(){
+	$("#btnInfo-Tatuador").mouseleave(function(){
         $("div.div-absolute").fadeOut();
     });
 	/////ir arriba

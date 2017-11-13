@@ -1,0 +1,39 @@
+.container{
+	margin-top: 100px;
+	/*margin: 100px 0 ;*/
+}
+.cld-labels{
+	cursor:pointer;
+	cursor: hand;
+	background: #0c0c0c;
+}
+.cld-main svg{
+	fill: #0c0c0c;
+}
+.cld-nav:hover svg{
+	fill: #fff;
+}
+.prevMonth, .nextMonth{
+	background: #222;
+}
+.currMonth{
+	background: #0c0c0c;
+}
+.cld-labels .cld-label:hover{
+
+	background: #222;
+}
+.div-absolute{
+	display: none;
+	padding: 10px;
+	z-index: 1;
+	position: absolute;
+	background:  gray;
+}
+.div-absolute button{
+	background: #27AE60;
+}
+.form-inline .form-group input{
+	width: 125px;
+}
+
