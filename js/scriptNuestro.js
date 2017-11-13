@@ -38,4 +38,11 @@ $(document).ready(function(){
 				scrollTop: '0px'
 			}, 300);
 		});
+	//////estilo boton form/////////
+	$('#input02').jfilestyle({
+		input : false
+	});
+	$('#input03').jfilestyle({
+		input : false
+	});
 });
