@@ -1,0 +1,42 @@
+.container{
+	margin-top: 80px;
+}
+div.container div.row:first-child{
+	background: #0c0c0c;
+	padding: 10px 0;
+}
+div.container div.row:last-child{
+	padding-top: 20px;
+	margin-bottom: 20px;
+	background: #CACFD2;
+	color: #0c0c0c;
+}
+div.container img{
+	min-width: 100%;
+	max-width: 100%;
+}
+div.settings .form-control {
+    height: 40px;
+    vertical-align: middle;
+    background: #fff;
+    border: 3px solid #fff;
+    font-size: 16px;
+    font-weight: 300;
+    /*line-height: 50px;*/
+}
+div.settings .form-control:focus {
+    background: #fff;
+    border: 3px solid #727272;
+}
+div.settings textarea{
+    min-height: 80px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.jfilestyle{
+	margin-top: 10px;
+}
+button.mibtn{
+	color: #fff;
+}
