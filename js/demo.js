@@ -30,6 +30,8 @@ $("li.cld-label ").mouseleave(function(){
     });
 
 $(document).ready(function(){
+	debugger
+	alert(caleandar);
     $(".cld-day .currMonth").click(function(){
         $("p").slideToggle();
     });

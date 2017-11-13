@@ -123,6 +123,7 @@ function createCalendar(calendar, element, adjuster){
 
   var mainSection = document.createElement('div');
   mainSection.className += "cld-main";
+   var s = 3;
 
   function AddDateTime(){
       var datetime = document.createElement('div');
@@ -246,11 +247,19 @@ function createCalendar(calendar, element, adjuster){
       }
       day.appendChild(number);
       // If Today..
-      if((i+1) == calendar.Today.getDate() && calendar.Selected.Month == calendar.Today.Month && calendar.Selected.Year == calendar.Today.Year){
-        day.className += " today";
+      //GUARDAR TODOS LOS DIAS HABILITADOS  Y MARCARLOS AQUI
+
+for(var f = 0; f <= calendar.Selected.Days; f++){
+        //AQUI VA UN ARREGLO CON TODOS LOS DIAS HABILITADOS DE EL MES Y ES COMPARADO EN EL IF DE ABAJO EN LUGAR DE "f", EL ARREGLO AUMENTA EN I ARRAY[I];
+        if((i+1) == calendar.Selected.FirstDay && calendar.Selected.Month == "10" && calendar.Selected.Year == "2017"){
+        s+=7;
+      //if((i+1) == "23" || (i+1) == "04" && calendar.Selected.Month == "10" && calendar.Selected.Year == "2017"){
+        day.className += " habilitar";
       }
       days.appendChild(day);
     }
+}
+
     // Next Month's Days
     // Always same amount of days in calander
     var extraDays = 13;

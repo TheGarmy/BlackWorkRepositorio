@@ -59,6 +59,11 @@
     background: #E7E9DE;
     color: #0c0c0c;
   }
+  .cld-day.habilitar .cld-number{
+    background: #229954;
+    color: #0c0c0c;
+  }
+
   .cld-day.disableDay{
     opacity: 0.5;
   }
