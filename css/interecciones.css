@@ -127,6 +127,7 @@ div.contenedor div.contenedor-pago hr{
 .cont-chat div.cont-tabs{
 	padding: 20px 0;
 	background: #616A6B;
+	min-height: 350px;
 }
 .cont-chat div.media{
 	cursor: pointer;
@@ -243,6 +244,25 @@ input:focus{
 }
 :-moz-placeholder { /* Firefox 18- */
     color: #d4d4d4;
+}
+#cont-lado-izq{
+	background: #E5E7E9;
+	min-height: 500px;
+}
+div.tipo2#cont-lado-izq > div{
+	color: #fff;
+	margin: 15px 0;
+	min-height: 460px;
+	background: #0c0c0c;
+}
+div.tipo2#cont-lado-izq .cont-borde{
+	margin-top: 10px;
+	padding: 10px 0;
+	border: 2px solid #949494;
+
+}
+div.tipo2#cont-lado-izq .mibtn{
+	width: 40%;
 }
 
 /*CAMBIOS DE KAREN*/
