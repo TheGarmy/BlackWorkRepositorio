@@ -1,11 +1,39 @@
 $(document).ready(function(){
+	$("a[href='#seccion1']").click(function(){
+		$("div.cont-chat div#cont-lado-izq").removeClass("tipo2");
+		// $("div.cont-chat div#cont-lado-izq").empty();
+		// $("div.cont-chat div#cont-lado-izq").html("<div class='row fondoNegro'>"+
+		// 											"<h2>Nombre del Ttauador</h2>"+
+		// 											"</div>");
+		// $("div.cont-chat div#cont-lado-izq").append("<div class='col-md-12 cont-mensajes'>"+
+		// 												"<div class='col-md-12 frame'>"+
+		// 													"<ul><ul>");
+		// $("div#cont-lado-izq .frame").append("<div>"+
+		// 										"<div class='msj-rta macro'>"+
+		// 											"<div class='text text-r'>"+
+		// 												"<input class='mytext' placeholder='Typea a message'>"+
+		// 											"</div></div></div></div>"
+		// 									);
+	});
 	$("div.media.activas").click(function(){
 		$("div.media").removeClass("media-activado");
 		$("button").remove();
+		$("div.cont-chat div#cont-lado-izq").empty();
+		$("div.cont-chat div#cont-lado-izq").html("<div class='row fondoNegro'>"+
+													"<h2>Nombre del Ttauador</h2>"+
+													"</div>");
+		$("div.cont-chat div#cont-lado-izq").append("<div class='col-md-12 cont-mensajes'>"+
+														"<div class='col-md-12 frame'>"+
+															"<ul><ul>");
+		$("div#cont-lado-izq .frame").append("<div>"+
+												"<div class='msj-rta macro'>"+
+													"<div class='text text-r'>"+
+														"<input class='mytext' placeholder='Typea a message'>"+
+													"</div></div></div></div>"
+											);
 		$(this).addClass("media-activado");
 		// debugger;
 		$(this).find('div.media-body').append("<button class='mibtn'>Ir a páginal del artista</button>");
-
 
 		///////arrrrrreeee
 		var me = {};
@@ -98,4 +126,31 @@ $(document).ready(function(){
 		$(this).find('div.media-body').append("<button class='mibtn'>Ir a páginal del artista</button>");
 	});
 
+	$("a[href='#seccion2']").click(function(){
+		// debugger
+		$("div.cont-chat div#cont-lado-izq").empty();
+		$("#cont-lado-izq").addClass("tipo2");
+
+		$("media").addClass("pendientes");
+	});
+	$(".media.pendientes").click(function(){
+		$("div.cont-chat div#cont-lado-izq").empty();
+		$("div.cont-chat div#cont-lado-izq").append(
+				'<div class="col-md-12">'+
+					'<div class="col-md-8 col-md-offset-2 cont-borde">'+
+						'<div class="col-md-8 col-md-offset-2">'+
+							'<img src="../img/perfil.jpg">'+
+						'</div>'+
+						'<div class="col-md-12">'+
+							'<h3>Media Middle</h3>'+
+						'</div>'+
+					'</div>'+
+					'<div class="col-md-12">'+
+						'<h3>Solicitud enviada para</h3>'+
+						'<h2>Sábado 28 de oct.</h2>'+
+						'<button class="mibtn">Cancelar</button>'+
+					'</div>'+
+				'</div>'
+			);
+	});
 });
