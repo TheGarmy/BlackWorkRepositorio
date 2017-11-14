@@ -1,19 +1,7 @@
 $(document).ready(function(){
 	$("a[href='#seccion1']").click(function(){
 		$("div.cont-chat div#cont-lado-izq").removeClass("tipo2");
-		// $("div.cont-chat div#cont-lado-izq").empty();
-		// $("div.cont-chat div#cont-lado-izq").html("<div class='row fondoNegro'>"+
-		// 											"<h2>Nombre del Ttauador</h2>"+
-		// 											"</div>");
-		// $("div.cont-chat div#cont-lado-izq").append("<div class='col-md-12 cont-mensajes'>"+
-		// 												"<div class='col-md-12 frame'>"+
-		// 													"<ul><ul>");
-		// $("div#cont-lado-izq .frame").append("<div>"+
-		// 										"<div class='msj-rta macro'>"+
-		// 											"<div class='text text-r'>"+
-		// 												"<input class='mytext' placeholder='Typea a message'>"+
-		// 											"</div></div></div></div>"
-		// 									);
+		$("div.cont-chat div#cont-lado-izq").empty();
 	});
 	$("div.media.activas").click(function(){
 		$("div.media").removeClass("media-activado");
@@ -127,7 +115,6 @@ $(document).ready(function(){
 	});
 
 	$("a[href='#seccion2']").click(function(){
-		// debugger
 		$("div.cont-chat div#cont-lado-izq").empty();
 		$("#cont-lado-izq").addClass("tipo2");
 
