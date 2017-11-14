@@ -11,15 +11,14 @@
 	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/jquery-filestyle.css">
-
+	<!-- <link rel="stylesheet" type="text/css" href="../css/jquery-filestyle.css"> -->
 
 	<!-- Nuestros css -->
 	<link rel="stylesheet" type="text/css" href="../css/elementos-standard.css">
 	<!-- <link rel="stylesheet" type="text/css" href="../css/formularios.css"> -->
 	<link rel="stylesheet" type="text/css" href="../css/interecciones.css">
 
-	<title>Citas Pendiente</title>
+	<title>Realizar Pago</title>
 </head>
 <body>
 <header>
@@ -71,43 +70,71 @@
 		</div>
 	</div>
 	<div class="row contenedor">
-		<div class="col-md-10 cont-citas">
-			<div class="col-md-3 cont-infoCita">
-				<h3>Juves 5 de Octubre</h3>
-				<p>Dragon Tattoos</p>
-				<p>10:00 - 12:00</p>
-				<p>Costo Total: <span>$500.00</span></p>
-				<p>Anticipo: <span>$250.00</span></p>
-				<button class="mibtn">Pagar anticipo</button>
-			</div>
-			<div class="col-md-3 cont-infoCita">
-				<h3>Juves 5 de Octubre</h3>
-				<p>Dragon Tattoos</p>
-				<p>10:00 - 12:00</p>
-				<p>Costo Total: <span>$500.00</span></p>
-				<p>Anticipo: <span>$250.00</span></p>
-				<button class="mibtn-pagado">Confirmada</button>
-			</div>
-			<div class="col-md-3 cont-infoCita">
-				<h3>Juves 5 de Octubre</h3>
-				<p>Dragon Tattoos</p>
-				<p>10:00 - 12:00</p>
-				<p>Costo Total: <span>$500.00</span></p>
-				<p>Anticipo: <span>$250.00</span></p>
-				<button class="mibtn-pagado">Confirmada</button>
-			</div>
-			<div class="col-md-3 cont-infoCita">
-				<h3>Juves 5 de Octubre</h3>
-				<p>Dragon Tattoos</p>
-				<p>10:00 - 12:00</p>
-				<p>Costo Total: <span>$500.00</span></p>
-				<p>Anticipo: <span>$250.00</span></p>
-				<button class="mibtn">Pagar anticipo</button>
-			</div>
+		<div class="col-md-12">
+			<div class="col-md-8 contenedor-pago">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-3">
+							<img src="../img/fondo2.jpg">
+						</div>
+						<div class="col-md-5 text-left">
+							<p>Martes 3 de Octubre</p>
+							<p>Tranza tattos</p>
+							<p>9:00 - 11:00</p>
+						</div>
+						<div class="col-md-4 align-middle">
+							<p>Anticipo:<span>$500.00</span></p>
+						</div>
+						<div class="col-md-12">
+							<hr>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-5 col-md-offset-7">
+						<p>Subtotal: <span>$500.00</span></p>
+						<p>Inspuestos: <span>$0.00</span></p>
+						<div class="col-md-12">
+							<hr>
+						</div>
+						<p>Total: <strong>$500.00</strong> mxm</p>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<hr>
+				</div>
+				<div class="row">
+					<div class="col-md-7">
+						<h3>Método de pago</h3>
+						<form class="form-inline">
+						  <div class="form-group">
+						    <div class="input-group">
+						      <div class="input-group-addon"><i class="fa fa-credit-card" aria-hidden="true"></i></div>
+						      <select class="form-control">
+								  <option>xxxxxxxxxxxxxxxx</option>
+								  <option>xxxxxxxxxxxxxxxx</option>
+								  <option>xxxxxxxxxxxxxxxx</option>
+								  <option>xxxxxxxxxxxxxxxx</option>
+								  <option>xxxxxxxxxxxxxxxx</option>
+								</select>
+						    </div>
+						  </div>
+						</form>
+						<div class="checkbox">
+						    <label>
+						      <input type="checkbox"> Acepto las condiciones de Blackwork
+						    </label>
+						  </div>
+					</div>
+					<div class="col-md-5 alinear-boton">
+						<button class="boton-Pago">Confirmar Pago</button>
+					</div>
+				</div>
 
-		</div>
-		<div class="col-md-2 info-recuerda">
-			<p><strong>Recuerda </strong>que para que tu cita sea confirmada necesitas pagar el anticipo.<br>Tienes un plazo de 24 horas para pagar o de lo contrario la cita será cancelada.</p>
+			</div>
+			<div class="col-md-4 info-recuerda">
+				<img src="../img/metodos.png" alt="">
+			</div>
 		</div>
 	</div><!-- ///fincontenedor citas -->
 </div>
@@ -141,7 +168,7 @@
 <!-- Bootstrap -->
 <script src="../js/bootstrap.min.js"></script>
 <!-- Nuestros scripts -->
-<script src="../js/jquery-filestyle.min.js"></script>
+<!-- <script src="../js/jquery-filestyle.min.js"></script> -->
 <script src="../js/scriptNuestro.js"></script>
 
 </body>
