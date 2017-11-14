@@ -4,11 +4,16 @@ $(document).ready(function(){
 		$("div.cont-chat div#cont-lado-izq").empty();
 	});
 	$("div.media.activas").click(function(){
+		var nombre = $(this).find("h3").text();
+		var fotoTatuador = $(this).find("img").attr('src');
+		var fotoMia = $("ul.miIcono li").find("img").attr('src');
+
+		$("div.cont-chat div#cont-lado-izq").removeClass("tipo2");
 		$("div.media").removeClass("media-activado");
 		$("button").remove();
 		$("div.cont-chat div#cont-lado-izq").empty();
 		$("div.cont-chat div#cont-lado-izq").html("<div class='row fondoNegro'>"+
-													"<h2>Nombre del Ttauador</h2>"+
+													"<h2>"+nombre+"</h2>"+
 													"</div>");
 		$("div.cont-chat div#cont-lado-izq").append("<div class='col-md-12 cont-mensajes'>"+
 														"<div class='col-md-12 frame'>"+
@@ -25,11 +30,12 @@ $(document).ready(function(){
 
 		///////arrrrrreeee
 		var me = {};
-		me.avatar = "https://lh6.googleusercontent.com/-lr2nyjhhjXw/AAAAAAAAAAI/AAAAAAAARmE/MdtfUmC0M4s/photo.jpg?sz=48";
+		me.avatar = fotoMia;
+		// "https://lh6.googleusercontent.com/-lr2nyjhhjXw/AAAAAAAAAAI/AAAAAAAARmE/MdtfUmC0M4s/photo.jpg?sz=48";
 
 		var you = {};
-		you.avatar = "https://a11.t26.net/taringa/avatares/9/1/2/F/7/8/Demon_King1/48x48_5C5.jpg";
-
+		you.avatar = fotoTatuador
+		// "https://a11.t26.net/taringa/avatares/9/1/2/F/7/8/Demon_King1/48x48_5C5.jpg";
 		function formatAMPM(date) {
 		    var hours = date.getHours();
 		    var minutes = date.getMinutes();
@@ -121,15 +127,18 @@ $(document).ready(function(){
 		$("media").addClass("pendientes");
 	});
 	$(".media.pendientes").click(function(){
+		var nombre = $(this).find("h3").text();
+		var fotoTatuador = $(this).find("img").attr('src');
+
 		$("div.cont-chat div#cont-lado-izq").empty();
 		$("div.cont-chat div#cont-lado-izq").append(
 				'<div class="col-md-12">'+
 					'<div class="col-md-8 col-md-offset-2 cont-borde">'+
 						'<div class="col-md-8 col-md-offset-2">'+
-							'<img src="../img/perfil.jpg">'+
+							'<img src='+fotoTatuador+'>'+
 						'</div>'+
 						'<div class="col-md-12">'+
-							'<h3>Media Middle</h3>'+
+							'<h3>'+nombre+'</h3>'+
 						'</div>'+
 					'</div>'+
 					'<div class="col-md-12">'+

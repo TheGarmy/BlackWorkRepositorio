@@ -123,6 +123,7 @@ div.contenedor div.contenedor-pago hr{
 .cont-chat .nav-pills>li.active>a:focus,
 .cont-chat .nav-pills>li.active>a:hover{
 	background: #616A6B;
+	color: #fff;
 }
 .cont-chat div.cont-tabs{
 	padding: 20px 0;
