@@ -70,47 +70,45 @@
 			<h1>Información Personal</h1>
 		</div>
 	</div>
-	<div class="row contenedor">
-		<div class="col-md-6">
-			<div class="col-md-10 col-md-offset-1">
-				<img src="../img/fondo.jpg">
+	<div class="row contenedor" name="config">
+<!--Modificaciones de karen-->
+		<div class="col-md-6" id="fotos">
+			<div class="col-md-12">
+				<img id="portada" src="../img/fondo.jpg">
 
 				<form name="formulario" action="envio.php" method="post" enctype="multipart/form-data">
 					<input type="file" id="input02" >
 				</form>
-			</div>
-			<div class="col-md-12">
-				<img src="../img/fondo.jpg">
+
+				<img id="perfil" src="../img/perfil.jpg">
 
 				<form name="formulario2" action="envio.php" method="post" enctype="multipart/form-data">
 					<input type="file" id="input03" >
 				</form>
 			</div>
-
-
+<!--Modificaciones de karen-->
 		</div>
 		<div class="col-md-6 settings">
 			<form class="form-horizontal" data-toggle="validator" role="form" >
+		<!--Modificaciones de karen-->
 				<div class="form-group">
 					<div class="col-md-10 col-md-offset-1">
-						<input type="text" class="form-control" placeholder="Nombre de usuario">
-					</div>
-				</div>
-				<div class="form-group">
-								<div class="col-md-10 col-md-offset-1">
 						<input type="text" class="form-control" placeholder="Nombre">
 					</div>
 				</div>
 				<div class="form-group">
 					<div class="col-md-10 col-md-offset-1">
-						<input type="text" class="form-control" placeholder="Apellidos">
+						<input type="text" class="form-control" placeholder="Nombre de usuario">
 					</div>
 				</div>
+				
+
 				<div class="form-group">
 					<div class="col-md-10 col-md-offset-1">
-						<input type="date" class="form-control">
+						<input type="text" class="form-control" placeholder="Fecha de nacimiento" onfocus="(this.type='date')">
 					</div>
 				</div>
+		<!--Modificaciones de karen-->
 				<div class="form-group">
 						<div class="col-md-10 col-md-offset-1">
 						<label class="radio-inline">
@@ -118,9 +116,6 @@
 						</label>
 						<label class="radio-inline">
 							<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Mujer
-						</label>
-						<label class="radio-inline">
-							<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Otro
 						</label>
 					</div>
 				</div>
@@ -153,9 +148,11 @@
 				</div>
 				<div class="form-group">
 
+		<!--Modificaciones de karen-->
 					<div class="col-md-10 col-md-offset-1">
-						<textarea class="form-control" rows="3" MAXLENGTH="255"></textarea>
+						<input type="text" class="form-control" placeholder="Direccion"></textarea>
 					</div>
+		<!--Modificaciones de karen-->
 				</div>
 			</form>
 		</div>
