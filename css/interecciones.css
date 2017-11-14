@@ -6,7 +6,7 @@ div.container img{
 	max-width: 100%;
 }
 div.settings .form-control {
-    height: 40px;
+    height: 30px;
     vertical-align: middle;
     background: #fff;
     border: 3px solid #fff;
@@ -244,4 +244,44 @@ input:focus{
 :-moz-placeholder { /* Firefox 18- */
     color: #d4d4d4;
 }
+
+/*CAMBIOS DE KAREN*/
+form[name="formulario"]{
+	position: relative;
+	bottom: 350px;
+	left: 180px;
+}
+
+#perfil, form[name="formulario2"]{
+	position: absolute;
+	z-index: 2;
+	bottom: 80px;
+	left: 40px;
+}
+
+#portada{
+
+	border: solid;
+	border-style: solid;
+	border-color: white;
+}
+
+#perfil{
+	min-width: 0;
+	width: 150px;
+	height: 150px;
+	border: solid;
+	border-style: solid;
+	border-color: white;
+	left: 30px;
+}
+
+.contenedor[name="config"]{
+  min-height: auto;
+}
+#fotos{
+	margin-top: 50px;
+}
+
+/*CAMBIOS DE KAREN*/
 
