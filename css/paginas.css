@@ -69,6 +69,7 @@
 }
 .btn-group a:hover{
 	color: #fff;
+	border-color: #fff;
 }
 .btn-group a:active{
 	color: #0C0C0C;
@@ -89,6 +90,7 @@
 	display: inline-block;
 }
 .contenedor-medias{
+	min-height: 87px;
 	margin-bottom: 20px;
 }
 .mimedia .thumbnail{
