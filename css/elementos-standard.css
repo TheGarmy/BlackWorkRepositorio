@@ -41,9 +41,15 @@ ul{
 	-webkit-border-radius: 5px 5px 5px 5px;
 	border-radius: 5px 5px 5px 5px;
 	border-style: solid;
+	outline: none;
 }
 .mibtn:hover{
-	background: #222;
+	background: #616A6B;
+	border-color: #0c0c0c;
+}
+.mibtn:active{
+	background: #B2BABB;
+	color: #0c0c0c;
 }
 hr{
 	width: 100%;

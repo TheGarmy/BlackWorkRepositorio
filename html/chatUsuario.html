@@ -11,15 +11,14 @@
 	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/jquery-filestyle.css">
-
+	<!-- <link rel="stylesheet" type="text/css" href="../css/jquery-filestyle.css"> -->
 
 	<!-- Nuestros css -->
 	<link rel="stylesheet" type="text/css" href="../css/elementos-standard.css">
 	<!-- <link rel="stylesheet" type="text/css" href="../css/formularios.css"> -->
 	<link rel="stylesheet" type="text/css" href="../css/interecciones.css">
 
-	<title>Citas Pendiente</title>
+	<title>Chat</title>
 </head>
 <body>
 <header>
@@ -67,47 +66,85 @@
 <div class="container">
 	<div class="row fondoNegro">
 		<div class="col-md-12">
-			<h1>Citas pendientes</h1>
+			<h1>Chats</h1>
 		</div>
 	</div>
 	<div class="row contenedor">
-		<div class="col-md-12 cont-citas">
-			<div class="col-md-3 cont-infoCita">
-				<h3>Juves 5 de Octubre</h3>
-				<p>Dragon Tattoos</p>
-				<p>10:00 - 12:00</p>
-				<p>Costo Total: <span>$500.00</span></p>
-				<p>Anticipo: <span>$250.00</span></p>
-				<button class="mibtn">Pagar anticipo</button>
-			</div>
-			<div class="col-md-3 cont-infoCita">
-				<h3>Juves 5 de Octubre</h3>
-				<p>Dragon Tattoos</p>
-				<p>10:00 - 12:00</p>
-				<p>Costo Total: <span>$500.00</span></p>
-				<p>Anticipo: <span>$250.00</span></p>
-				<button class="mibtn-pagado">Confirmada</button>
-			</div>
-			<div class="col-md-3 cont-infoCita">
-				<h3>Juves 5 de Octubre</h3>
-				<p>Dragon Tattoos</p>
-				<p>10:00 - 12:00</p>
-				<p>Costo Total: <span>$500.00</span></p>
-				<p>Anticipo: <span>$250.00</span></p>
-				<button class="mibtn-pagado">Confirmada</button>
-			</div>
-			<div class="col-md-3 cont-infoCita">
-				<h3>Juves 5 de Octubre</h3>
-				<p>Dragon Tattoos</p>
-				<p>10:00 - 12:00</p>
-				<p>Costo Total: <span>$500.00</span></p>
-				<p>Anticipo: <span>$250.00</span></p>
-				<button class="mibtn">Pagar anticipo</button>
-			</div>
+		<div class="col-md-12 cont-chat">
+			<div class="col-md-5">
 
-		</div>
-		<div class="col-md-12 info-recuerda">
-			<p><strong>Recuerda </strong>que para que tu cita sea confirmada necesitas pagar el anticipo.<br>Tienes un plazo de 24 horas para pagar o de lo contrario la cita será cancelada.</p>
+				<div role="tabpanel">
+					<ul class="nav nav-pills nav-justified" role="tablist">
+						<li role="presentation" class="active"><a href="#seccion1" arial-controls="seccion1" data-toggle="tab" role="tab">Activos</a></li>
+						<li role="presentation"><a href="#seccion2" arial-controls="seccion2" data-toggle="tab" role="tab">Pendientes</a></li>
+					</ul>
+					<div class="col-md-12 cont-tabs">
+						<div class="tab-content">
+							<div class="tab-pane active" role="tabpanel" id="seccion1">
+								<div class="col-md-12 cont-perfilesChat">
+
+									<div class="col-md-12 media activas">
+										<div class="media-left media-middle col-md-4">
+											<img src="../img/fondo.jpg" class="media-object">
+										</div>
+										<div class="media-body">
+											<h3 class="media-middle">Media Middle</h3>
+										</div>
+									</div>
+									<div class="col-md-12 media activas">
+										<div class="media-left media-middle col-md-4">
+											<img src="../img/01.jpg" class="media-object">
+										</div>
+										<div class="media-body">
+											<h3 class="">Media Middle</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane" role="tabpanel" id="seccion2">
+								<div class="col-md-12 cont-perfilesChat">
+									<div class="col-md-12 media pendientes">
+										<div class="media-left media-middle col-md-4">
+											<img src="../img/01.jpg" class="media-object">
+										</div>
+										<div class="media-body">
+											<h3 class="">Media Middle</h3>
+										</div>
+									</div>
+									<div class="col-md-12 media pendientes">
+										<div class="media-left media-middle col-md-4">
+											<img src="../img/01.jpg" class="media-object">
+										</div>
+										<div class="media-body">
+											<h3 class="">Media Middle</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-md-7">
+				<div class="col-md-12">
+					<div class="row fondoNegro">
+						<h2>Media Middle</h2>
+					</div>
+					<div class="col-md-12 cont-mensajes">
+						<div class="col-md-12 frame">
+							<ul></ul>
+							<div>
+								<div class="msj-rta macro">
+									<div class="text text-r">
+										<input class="mytext" placeholder="Type a message"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div><!-- ///fincontenedor citas -->
 </div>
@@ -141,8 +178,8 @@
 <!-- Bootstrap -->
 <script src="../js/bootstrap.min.js"></script>
 <!-- Nuestros scripts -->
-<script src="../js/jquery-filestyle.min.js"></script>
 <script src="../js/scriptNuestro.js"></script>
+<script src="../js/scriptChat.js"></script>
 
 </body>
 </html>
